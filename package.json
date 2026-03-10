@@ -12,7 +12,7 @@
     "sync:metadata": "node tools/scripts/run-python.js tools/scripts/sync_repo_metadata.py",
     "chain": "npm run validate && npm run index && npm run readme",
     "sync:all": "npm run sync:metadata && npm run chain",
-    "catalog": "node tools/scripts/build-catalog.js",
+    "catalog": "node tools/scripts/build-catalog.js && node tools/scripts/build-site.js",
     "build": "npm run chain && npm run catalog",
     "test": "node tools/scripts/tests/run-test-suite.js",
     "test:local": "node tools/scripts/tests/run-test-suite.js --local",
